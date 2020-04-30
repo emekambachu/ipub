@@ -1,0 +1,40 @@
+# Use PHP56 
+Single php.ini as default
+AddHandler application/x-httpd-php56s .php
+
+
+
+#redirect https
+
+RewriteCond %{HTTPS} off
+
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+# Turn mod_rewrite on
+
+
+RewriteEngine On
+
+
+
+# redirect to amp
+
+RewriteCond %{REQUEST_URI} !/amp$ [NC]
+RewriteCond %{HTTP_USER_AGENT} (android|blackberry|googlebot\-mobile|iemobile|iphone|ipod|\#opera\ mobile|palmos|webos) [NC]
+RewriteRule ^([a-zA-Z0-9-]+)([\/]*)$ https://example.com/$1/amp [L,R=302]
+
+#Modify Urls for Page Navigation
+RewriteRule ^Home?$ index.php [NC,L]
+RewriteRule ^Contact?$ contact.php [NC,L]
+RewriteRule ^Advertise?$ advertise.php [NC,L]
+
+#Blog Category pages
+RewriteRule ^Category/([^/]+)?/?([a-zA-Z0-9\-]+)$ cat_posts.php?id=$1&name=$2 [NC,L]
+
+#Blog pages
+RewriteRule ^Posts/([^/]+)?/?([a-zA-Z0-9\-]+)$ view_post.php?id=$1&name=$2 [NC,L]

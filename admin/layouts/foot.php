@@ -1,0 +1,1 @@
+<?php echo date('Y'); ?> &copy; Nigerian Cultural Arts Exchange 

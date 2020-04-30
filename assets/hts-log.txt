@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 14 May 2018 11:13:04 at https://mobius.studio/themes/MobNews/LTR/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://mobius.studio/themes/MobNews/LTR/index.html -O1 "C:\My Web Sites\mobnews" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:13:57	Warning: 	Retry after error -4 (No data (connection closed)) at link https://img.mobius.studio/themes/MobNews/LTR/assets/img/splashScreens/apple-touch-startup-image-1536x2008.png (from https://mobius.studio/themes/MobNews/LTR/index.html)
+11:13:57	Warning: 	Retry after error -4 (No data (connection closed)) at link https://img.mobius.studio/themes/MobNews/LTR/assets/img/splashScreens/apple-touch-startup-image-1242x2148.png (from https://mobius.studio/themes/MobNews/LTR/index.html)
+11:14:02	Warning: 	Retry after error -4 (No data (connection closed)) at link https://img.mobius.studio/themes/MobNews/LTR/assets/img/index_latest_news_1_54x54.jpg (from https://mobius.studio/themes/MobNews/LTR/index.html)
+11:14:02	Warning: 	Retry after error -4 (No data (connection closed)) at link https://mobius.studio/themes/MobNews/LTR/news-category.html (from https://mobius.studio/themes/MobNews/LTR/index.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 9 seconds : 130 links scanned, 125 files written (14447812 bytes overall) [13847245 bytes received at 73265 bytes/sec], 894110 bytes transferred using HTTP compression in 42 files, ratio 25%, 2.4 requests per connection
+(No errors, 4 warnings, 0 messages)
